@@ -22,6 +22,40 @@
   background-repeat: no-repeat;
   grid-column: 1;
 }
+
+.signal {
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 162px);
+  grid-template-rows: repeat(1, 1 00px);
+}
+
+#sr1 {
+  height: 100px;
+  width: 163px;
+  display: grid;
+  grid-template-columns: repeat(3, 53px);
+  grid-template-rows: repeat(2, 163px);
+}
+#dots {
+  grid-column: 1;
+  grid-row: 1;
+}
+#att {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#wifi {
+  grid-column: 3;
+  grid-row: 1;
+}
+#backbutton {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
 #profile {
   grid-column: 2;
   /* background-image: url("/assets/time.png");
@@ -30,7 +64,7 @@
   grid-template-rows: repeat(2, 200px);
   font-size: 25px;
   font-family: sans-serif;
-  font-weight: bolder;
+  font-weight: bold;
   color: white;
   background-color: rgb(85, 173, 238);
 }
@@ -71,67 +105,67 @@
   grid-template-rows: repeat(2, 35px);
   /* color: rgb(170, 180, 186);
   font-size:15px; */
-  align-content: flex-start
+  align-content: flex-start;
 }
 
 #tweetnums {
-grid-row: 1;
-grid-column: ;
-font-size:20px;
-font-family: sans-serif;
-font-weight: 550;
-border-right: solid 1px rgb(215,230,232);
-padding-top: 12px;
-padding-right: 10px;
-
+  grid-row: 1;
+  grid-column: ;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 550;
+  border-right: solid 1px rgb(215, 230, 232);
+  padding-top: 15px;
+  padding-right: 60px;
 }
 #tweets {
-grid-row: 2;
-grid-column: ;
-font-size:15px;
-border-right: solid 1px rgb(215,230,232);;
-border-bottom: solid 1px rgb(215,230,232);;
-color: rgb(215,230,232);
-color: rgba(25,25,50,.4);
+  grid-row: 2;
+  grid-column: ;
+  font-size: 15px;
+  border-right: solid 1px rgb(215, 230, 232);
+  border-bottom: solid 1px rgb(215, 230, 232);
+  color: rgb(215, 230, 232);
+  color: rgba(25, 25, 50, 0.4);
+  padding-right: 50px;
 }
-#followingnums{
-grid-row: 1;
-grid-column: ;
-font-size:20px;
-font-weight: 550;
-border-right: solid 1px rgb(215,230,232);
-font-family: sans-serif;
-padding-right: 45px;
-padding-top: 12px
+#followingnums {
+  grid-row: 1;
+  grid-column: ;
+  font-size: 20px;
+  font-weight: 550;
+  border-right: solid 1px rgb(215, 230, 232);
+  font-family: sans-serif;
+  padding-right: 55px;
+  padding-top: 15px;
+  
 }
-#following{
-grid-row: 2;
-grid-column: ;
-font-size:15px;
-border-right: solid 1px rgb(215,230,232);;
-border-bottom: solid 1px rgb(215,230,232);;
-color: rgb(215,230,232);
-color: rgba(25,25,50,.4);
+#following {
+  grid-row: 2;
+  grid-column: ;
+  font-size: 15px;
+  border-right: solid 1px rgb(215, 230, 232);
+  border-bottom: solid 1px rgb(215, 230, 232);
+  color: rgb(215, 230, 232);
+  color: rgba(25, 25, 50, 0.4);
+  padding-right: 15px;
+
 }
-#followernums{
-grid-row: 1;
-grid-column: ;
-font-weight: 550;
-font-size:20px;
-font-family: sans-serif;
-padding-right: 45px;
-padding-top: 12px
+#followernums {
+  grid-row: 1;
+  grid-column: ;
+  font-weight: 550;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-right: 45px;
+  padding-top: 15px;
 }
 #followers {
-grid-row: 2;
-grid-column: ;
-font-size:15px;
-border-bottom: solid 1px rgb(215,230,232);;
-color: rgba(25,25,50,.4);
-
-
+  grid-row: 2;
+  grid-column: ;
+  font-size: 15px;
+  border-bottom: solid 1px rgb(215, 230, 232);
+  color: rgba(25, 25, 50, 0.4);
 }
-
 
 /* #tweets {
   border: 1px solid rgba(0, 0, 0, 0.2);
