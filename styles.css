@@ -5,10 +5,11 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 100px 250px 75px 75px 200px 50px;
+  grid-template-rows: 100px 250px 35px 35px 75px 200px 50px;
 }
 
 #grid-header {
+  /* grid-row: 1; */
   height: 100px;
   width: 100%;
   display: grid;
@@ -16,19 +17,33 @@
   grid-template-rows: repeat(1, 100px);
 }
 #signal {
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.15.36\ PM.png);
+  background-image: url("/assets/signal.png");
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: 1;
 }
 #profile {
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.15.49\ PM.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   grid-column: 2;
+  /* background-image: url("/assets/time.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  grid-template-rows: repeat(2, 200px);
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(85, 173, 238);
+}
+
+#profilediv1 {
+  font-size: 21px;
+  padding-top: 5px;
+  padding-bottom: 23px;
+  font-family: sans-serif;
+  font-weight: bolder;
 }
 #battery {
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.16.41\ PM.png);
+  background-image: url("/assets/battery.png");
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: 3;
@@ -40,7 +55,7 @@
 .profile-pic {
   grid-row: 2;
   /* grid-column: 1/6; */
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.05.33\ PM.png);
+  background-image: url("/assets/profile.png");
   background-size: cover;
   background-repeat: no-repeat;
   /* width: 10%; */
@@ -48,119 +63,193 @@
 }
 
 .numbers {
-  height: 75px;
+  height: 35px;
   grid-row: 3;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 162px);
-  grid-template-rows: repeat(1, 75px);
+  grid-template-rows: repeat(2, 35px);
+  /* color: rgb(170, 180, 186);
+  font-size:15px; */
+  align-content: flex-start
 }
 
+#tweetnums {
+grid-row: 1;
+grid-column: ;
+font-size:20px;
+font-family: sans-serif;
+font-weight: 550;
+border-right: solid 1px rgb(215,230,232);
+padding-top: 12px;
+padding-right: 10px;
+
+}
 #tweets {
-    border:1px solid rgba(0,0,0,.2);
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.56.38\ PM.png);
+grid-row: 2;
+grid-column: ;
+font-size:15px;
+border-right: solid 1px rgb(215,230,232);;
+border-bottom: solid 1px rgb(215,230,232);;
+color: rgb(215,230,232);
+color: rgba(25,25,50,.4);
+}
+#followingnums{
+grid-row: 1;
+grid-column: ;
+font-size:20px;
+font-weight: 550;
+border-right: solid 1px rgb(215,230,232);
+font-family: sans-serif;
+padding-right: 45px;
+padding-top: 12px
+}
+#following{
+grid-row: 2;
+grid-column: ;
+font-size:15px;
+border-right: solid 1px rgb(215,230,232);;
+border-bottom: solid 1px rgb(215,230,232);;
+color: rgb(215,230,232);
+color: rgba(25,25,50,.4);
+}
+#followernums{
+grid-row: 1;
+grid-column: ;
+font-weight: 550;
+font-size:20px;
+font-family: sans-serif;
+padding-right: 45px;
+padding-top: 12px
+}
+#followers {
+grid-row: 2;
+grid-column: ;
+font-size:15px;
+border-bottom: solid 1px rgb(215,230,232);;
+color: rgba(25,25,50,.4);
+
+
+}
+
+
+/* #tweets {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: url("/assets/tweets.png");
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: 1;
-}
-#following {
-     border:1px solid rgba(0,0,0,.2);
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.56.55\ PM.png);
+} */
+
+/* #following {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: url("/assets/following.png");
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: 2;
 }
 #followers {
-     border:1px solid rgba(0,0,0,.2);
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 2.57.05\ PM.png);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: url("/assets/follower.png");
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: 3;
-}
+} */
 
 .follow-settings {
   background-color: transparent;
-  grid-row: 4;
+  grid-row: 5;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 162px);
   grid-template-rows: repeat(1, 100px);
 }
-#settings-button{
-    grid-column: 1;
-    margin-top:8%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: center;
-    width:70px;
-    height: 45px;
-    border-radius: 5px;
-    border:2px solid lightgrey;
-    background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 3.46.12\ PM.png);
-    background-size: contain;
+#settings-button {
+  grid-column: 1;
+  margin-top: 8%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  background-image: url("/assets/settings.png");
+  background-size: contain;
 }
-#follow-button{
-    grid-column: 3;
-    margin-top:8%;
-    /* margin-left: 2%; */
-    display: flex;
-    justify-content: center;
-    width:150px;
-    height: 45px;
-    border-radius: 5px;
-    border:2px solid lightskyblue;
-    background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 3.50.07\ PM.png);
-    background-size: contain;
+#follow-button {
+  grid-column: 3;
+  margin-top: 8%;
+  /* margin-left: 2%; */
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid lightskyblue;
+  background-image: url("/assets/followbutton.png");
+  background-size: contain;
 }
 .tweeter {
-  background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 3.53.51\ PM.png);
+  background-image: url("/assets/tweeter.png");
   background-size: contain;
   background-repeat: no-repeat;
-  grid-row: 5;
+  grid-row: 6;
 }
 
-.bottom-buttons{
-    background-color: rgba(17,17,17,1);
-    border-radius: 0px 0px 1px 5px;
-    height: 65px;
-  grid-row: 6;
+.bottom-buttons {
+  background-color: rgba(17, 17, 17, 1);
+  border-radius: 0px 0px 1px 5px;
+  height: 65px;
+  grid-row: 7;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  color: white;
 }
 
-#home{
-     background-color: rgba(17,17,17,1);
-    border: none;
-    grid-column: 1;
-    background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 4.03.30\ PM.png);
+#home {
+  background-color: rgba(17, 17, 17, 1);
+  border: none;
+  grid-column: 1;
+  background-image: url("/assets/homebutton.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 0px 0px 0px 5px;
+  color: white;
+  font-size: 17px;
+  padding-top: 40px;
 }
-#connect{
-     background-color: rgba(17,17,17,1);
-        border: none;
-
-     grid-column: 2;
-    background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 4.03.44\ PM.png);
+#connect {
+  background-color: rgba(17, 17, 17, 1);
+  border: none;
+  grid-column: 2;
+  background-image: url("/assets/connectbutton.png");
   background-size: contain;
   background-repeat: no-repeat;
+  color: white;
+  font-size: 17px;
+  padding-top: 40px;
 }
-#discover{
-     background-color: rgba(17,17,17,1);
-        border: none;
-
-     grid-column: 3;
-    background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 4.03.56\ PM.png);
+#discover {
+  background-color: rgba(17, 17, 17, 1);
+  border: none;
+  grid-column: 3;
+  background-image: url("/assets/discoverbutton.png");
   background-size: contain;
   background-repeat: no-repeat;
+  color: white;
+  font-size: 17px;
+  padding-top: 40px;
 }
-#me{
-     background-color: rgba(17,17,17,1);
-        border: none;
-border-radius: 5px;
-     grid-column: 4;
-    background-image: url(/assets/Screen\ Shot\ 2019-06-17\ at\ 4.04.08\ PM.png);
+#me {
+  background-color: rgba(17, 17, 17, 1);
+  border: none;
+  border-radius: 5px;
+  grid-column: 4;
+  background-image: url("/assets/mebutton.png");
   background-size: contain;
   background-repeat: no-repeat;
+  color: white;
+  font-size: 17px;
+  padding-top: 40px;
 }
